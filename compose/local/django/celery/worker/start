@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -o errexit
+set -o nounset
+
+
+celery -A btls_cookiecutter.taskapp worker -l INFO
